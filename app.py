@@ -1,6 +1,6 @@
-from flaskimport flask,request,render_template
+from flask import Flask,request,render_template
 
-app=Flask(__name__)
+app = Flask(__name__)
 
 @app.route("/",methods=["GET","post"])
 
