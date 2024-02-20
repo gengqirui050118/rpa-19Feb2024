@@ -1,20 +1,22 @@
-from flask import Flask,request,render_template
+from flask import Flask, request, render_template
 
-app = Flask(__name__)
+app = Flask(__name__) 
 
-@app.route("/",methods=["GET","post"])
+r = ""
+first_time = 1
 
-def index():
-  return(render_template("index.html"))
-@app.route("/main",methods=["GET","POST"])
+@app.route("/",methods["GET","POST"]) 
+def index(): 
+    return(render_template("index.html")) 
 
-def main():
-r = request.form.get("r")
-return(render_template("main.html",r=r))
+@app.route("/main”,methods=["GET","POST"] 
+def  main(): 
+     global r, first_time 
+     if first_time==1: 
+     r = request.form.get("r") 
+     first_time=0 
+ return(render_template("main.htm1",r=r)) 
 
-@app.route("/imageGPT",methods=["GET", "POST"])
-def main():
-  return(render_templats("imageGPT.html",r=r))
-  
-if __name__=="__main__":
-  app.run()      
+@app.route("/image_gpt”,methods["GET,"POST"]) 
+def image_gpt(): 
+    return(render_template("image_gpt.htm1"))   
