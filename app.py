@@ -1,4 +1,7 @@
-from flask import Flask,request,render_template
+
+
+
+   from flask import Flask,request,render_template
 
 app = Flask(__name__)
 r = ""
@@ -28,7 +31,4 @@ def end():
   return(render_template("end.html"))
 
 if __name__=="__main__":
-  app.run()
-
-
-    
+  app.run() 
