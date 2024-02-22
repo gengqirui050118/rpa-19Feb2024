@@ -1,15 +1,15 @@
-<style> 
-    .containerf{Width:100%;margin:auto} 
-    @amedia(min-width:600px)f.containerwidth:80%;1 
-    @amedia(min-Width:768px)f.containerf{Width:60%;3 
-    @amedia (min-width:1024px)f.containerfwidth:50%; 
-</style> 
+<style>
+    .container{width:100%;margin:auto}
+    @media (min-width:600px) {.container{width: 80%;}}
+    @media (min-width:768px) {.container{width: 60%;}}
+    @media (min-width:1024px) {.container{width: 50%;}}
+</style>
 
-<div clasS="container"> 
-<h1>Welcome to Image Generator(Midjourney)</h1> 
-<form action="/image_result" method="post"> 
-        <h2>Please describe the picture you want </h2> 
-        <input type m"text"name="g"> 
-        <input type ="submit"value="Enter"style="width:200px;height:100px;"> 
-</form> 
+<div class="container">
+<h1>Welcome to Image Generator (Midjourney)</h1>
+<form action="/image_result" method="post">
+        <h2>Please describe the picture you want </h2>
+        <input type = "text" name="q" style="width:100px;height:50px">
+        <p><input type = "submit" value="Enter" style="width:100px;height:50px"></p>
+</form>
 </div>
