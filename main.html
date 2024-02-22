@@ -1,17 +1,19 @@
 <style>
     .container{width:100%;margin:auto}
-    @media (min_width:600px){.container{width:80%;}}
-    @media (min_width:768px){.container{width:60%;}}
-    @media (min_width:1024px){.container{width:50%;}}
+    @media (min-width:600px) {.container{width: 80%;}}
+    @media (min-width:768px) {.container{width: 60%;}}
+    @media (min-width:1024px) {.container{width: 50%;}}
 </style>
 
 <div class="container">
-<h1>Hi,{{r}}.How can help you today?</h1>
-<form action ="/image_gpt" method="post">
-    <input type ="submit" value="Image Generator" style="width:200px;height:100px;">
+<h1>Hi, {{r}}. How can help you today?</h1>
+<form action="/text_gpt" method="post">
+    <input type = "submit" value="Text Generator" style="width:200px;height:50px;">
 </form>
-<form action ="/end" method="post">
-<input type ="submit" value="END" style="width:200px;height:100px;">
+<form action="/image_gpt" method="post">
+    <input type = "submit" value="Image Generator" style="width:200px;height:50px;">
+</form>
+<form action="/end" method="post">
+    <input type = "submit" value="END" style="width:200px;height:50px;">
 </form>
 </div>
-    
